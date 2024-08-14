@@ -2,7 +2,7 @@
 document.querySelectorAll(".sticky-dot button").forEach((anchor, index) => {
   anchor.addEventListener("click", (e) => {
     e.preventDefault();
-    const offsetsValue = [60, 90, 55, 110, 120, 90];
+    const offsetsValue = [60, 90, 55, 110, 120, 90, 0];
     const atrValue = e.target.getAttribute("data-target");
     const targetElement = document.getElementById(atrValue);
     if (targetElement) {
@@ -21,12 +21,13 @@ document.querySelectorAll(".sticky-dot button").forEach((anchor, index) => {
   });
 });
 /* Sticky button */
+
 document
   .querySelectorAll("#container-navigation-desktop button")
   .forEach((anchor, index) => {
     anchor.addEventListener("click", (e) => {
       e.preventDefault();
-      const offsetsValue = [90, 110, 120, 90]
+      const offsetsValue = [90, 53, 120, 120, 90]
       const atrValue = e.target.getAttribute("data-target");
       const targetElement = document.getElementById(atrValue);
       if (targetElement) {
@@ -273,18 +274,36 @@ hamburgerButtonDrawer.addEventListener("click", () => {
 });
 
 // Select the drawer body and close drawer
-const drawerBody = document.querySelector(".drawer-body");
-drawerBody.addEventListener("click", (event) => {
-  if (event.target.tagName === "A") {
-    drawer.classList.remove("open");
-    hamburgerButtonDrawer.classList.remove("open");
-  }
-});
+document
+  .querySelectorAll("#container-navigation-mobile button")
+  .forEach((anchor, index) => {
+    anchor.addEventListener("click", (e) => {
+      e.preventDefault();
+      drawer.classList.remove("open");
+      hamburgerButtonDrawer.classList.remove("open");
+      const offsetsValue = [90, 350, 80, -80, 90]
+      const atrValue = e.target.getAttribute("data-target");
+      const targetElement = document.getElementById(atrValue);
+      if (targetElement) {
+        const headerOffset = offsetsValue[index];
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      } else {
+        console.error(`Element with ID ${targetElement} not found.`);
+      }
+    });
+  });
 /* Drawer */
 
 /* Submit Form */
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector(".wrapper-form-section-4");
+  const form = document.getElementById("form-submit-email");
   const textarea = form.querySelector("#textarea-pesan");
   const alertModal = document.getElementById("custom-alert");
   const alertMessage = document.getElementById("alert-message");
@@ -371,7 +390,13 @@ document.addEventListener("DOMContentLoaded", () => {
       // Create and dispatch a submit event to trigger the form's submit event listener
       const submitEvent = new Event("submit", { bubbles: true });
       form.dispatchEvent(submitEvent);
+      const targetElement = document.getElementById("form-submit-email");
+      targetElement.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the target element
     }
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
   });
 });
 /* Submit Form */

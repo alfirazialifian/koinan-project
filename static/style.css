@@ -235,6 +235,13 @@ footer {
   cursor: pointer;
 }
 
+.koinan-bg-icon {
+  background: linear-gradient(to right, var(--color-primary), rgba(16, 45, 50, 0.8));
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 4rem;
+}
+
 .active-dot {
   outline: 6px solid rgba(174, 216, 81, 1) !important;
 }
@@ -252,7 +259,7 @@ footer {
   box-sizing: border-box;
   grid-template-columns: minmax(300px, 8fr) minmax(300px, 8fr) minmax(30px, 1fr);
   width: 100%;
-  background-image: url('./static/assets/Line.svg');
+  background-image: url('./assets/Line.svg');
   background-position: 0 -90px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -260,7 +267,7 @@ footer {
   .wrapper-hero-smile-section-1 {
     display: flex;
     justify-content: flex-end;
-    background-image: url('./static/assets/Frame-Hero-Smile.svg');
+    background-image: url('./assets/Frame-Hero-Smile.svg');
     background-repeat: no-repeat;
 
     & > div {
@@ -969,6 +976,17 @@ footer {
     overflow: hidden;
   }
 
+  .koinan-bg-icon {
+    display: none;
+  }
+
+  .koinan-bg-icon {
+    background: linear-gradient(to right, var(--color-primary), rgba(16, 45, 50, 0.8));
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+  }
+
   .section-1, .section-2, .section-3, .section-4 {
     grid-template-columns: minmax(200px, 1fr); /* Single column layout on mobile */
     grid-template-rows: auto auto auto; /* Adjust rows to fit content */
@@ -1132,7 +1150,7 @@ footer {
   background: linear-gradient(180deg, #102D32 42.67%, rgba(16, 45, 50, 0) 192.34%);
 }
 
-.drawer-body a {
+.drawer-body button {
   color: white;
   text-decoration: none;
   display: block;
@@ -1144,7 +1162,7 @@ footer {
   line-height: 22.08px;
 }
 
-.drawer-body a:hover {
+.drawer-body button:hover {
   text-decoration: underline;
 }
 

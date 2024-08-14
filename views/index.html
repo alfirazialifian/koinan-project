@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Koinan offers efficient and practical coin-to-digital currency solutions in Indonesia. Easily convert your coins with our innovative machines."
+    />
+    <link rel="icon" href="./static/assets/Logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <title>Koinan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav>
+      <img id="koinan-icon" loading="eager" src="./static/assets/Logo.svg"/
+      alt="Koinan Logo" style="cursor: pointer;">
+      <div id="container-navigation-desktop">
+        <button data-target="tentang-kami" class="menus-text">
+          Tentang Kami
+        </button>
+        <button data-target="cara-tukar-koin" class="menus-text">
+          Cara Tukar Koin
+        </button>
+        <button data-target="temukan-kami" class="menus-text">
+          Temukan Kami
+        </button>
+        <button data-target="hubungi-kami" class="menus-text">
+          Hubungi Kami
+        </button>
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="hamburger-button" id="hamburger-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <!-- drawer mobile -->
+    <div class="drawer" id="drawer">
+      <div class="drawer-header">
+        <img id="koinan-icon" loading="eager" src="./static/assets/Logo.svg"/
+        alt="Koinan Logo">
+        <div class="hamburger-button-drawer" id="hamburger-button-drawer">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+
+      <div class="drawer-body">
+        <a href="#tentang-kami" class="menus-text">Tentang Kami</a>
+        <a href="#cara-tukar-koin" class="menus-text">Cara Tukar Koin</a>
+        <a href="#temukan-kami" class="menus-text">Temukan Kami</a>
+        <a href="#hubungi-kami" class="menus-text">Hubungi Kami</a>
+      </div>
+      <footer id="footer">
+        <p>@2024 KOINAN</p>
+        <div>
+          <a href="#" class="menus-text"
+            ><img
+              loading="lazy"
+              src="./static/assets/footer/IG.svg"
+              alt="image-instagram"
+          /></a>
+          <a href="#" class="menus-text"
+            ><img
+              loading="lazy"
+              src="./static/assets/footer/LI.svg"
+              alt="image-linkedin"
+          /></a>
+          <a href="#" class="menus-text"
+            ><img
+              loading="lazy"
+              src="./static/assets/footer/YT.svg"
+              alt="image-youtube"
+          /></a>
+        </div>
+      </footer>
+    </div>
+
+    <div class="container-content">
+      <!-- Section 1 -->
+      <section
+        id="section-1"
+        class="section-1 padding-left-section border-bottom-section observer"
+      >
+        <div
+          class="wrapper-hero-smile-section-1 border-content-section-left padding-section"
+        >
+          <div></div>
+          <!-- <img loading="lazy" src="./static/assets/Hero-smile.svg" alt="Hero Smile"> -->
+        </div>
+        <div
+          class="wrapper-text-section-1 border-content-section padding-section"
+        >
+          <h2>
+            Solusi Untuk <br />
+            Masalah Receh
+          </h2>
+          <p>
+            Bingung uang koin yang ada di tumpukan, celengan dan kantong bisa diapakan? <br/>
+            Kami hadir untuk menukarkan koin Anda menjadi saldo digital dengan cepat dan mudah.
+          </p>
+          <button class="wrapper-scroll">
+            <p>SCROLL</p>
+            <img
+              loading="lazy"
+              src="./static/assets/chevron-bottom.svg"
+              alt="chevron-down"
+            />
+          </button>
+          <div class="sticky-dot">
+            <div class="wrapper-fixed">
+              <button data-target="section-1"></button>
+              <button data-target="section-2-top"></button>
+              <button data-target="section-2-bottom"></button>
+              <button data-target="section-3-top"></button>
+              <button data-target="temukan-kami"></button>
+              <button data-target="hubungi-kami"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="tentang-kami" class="section-2 padding-left-section">
+        <!-- section top -->
+        <div
+          id="section-2-top"
+          class="wrapper-text-top-section-2 border-content-section-left border-bottom-section padding-section observer"
+        >
+          <div>
+            <h5>TENTANG KAMI</h5>
+            <h3>
+              Koinan adalah inovasi terbaru dalam dunia keuangan di Indonesia.
+            </h3>
+          </div>
+          <p>
+            Kami bertekad untuk mengatasi masalah umum terkait koin receh dengan
+            menyediakan solusi yang efisien dan praktis. Dengan Koinan, kami
+            ingin memudahkan setiap orang untuk mengakses uang digital dengan
+            aman dan mudah.
+          </p>
+        </div>
+        <div
+          class="wrapper-heroes-top-section-2 border-content-section border-bottom-section padding-section"
+        >
+          <img
+            loading="lazy"
+            src="./static/assets/heroes-2.svg"
+            alt="heroes-watching"
+            style="width: 100%"
+          />
+        </div>
+        <span></span>
+
+        <!-- section bottom -->
+        <div
+          id="section-2-bottom"
+          class="wrapper-heroes-bottom-section-2 border-content-section-left padding-section observer"
+        >
+          <div class="hero-section-2-smile">
+            <h5>Untuk Individu</h5>
+            <p>
+              Koinan menyediakan mesin penukaran koin otomatis yang dapat
+              diakses dengan mudah di berbagai lokasi. Anda bisa menukarkan koin
+              receh Anda menjadi saldo digital di digital wallet Anda tanpa
+              harus antri di bank atau money changer.
+            </p>
+          </div>
+          <div class="hero-section-2-computer">
+            <h5>Untuk Pemilik Usaha</h5>
+            <p>
+              Koinan juga menawarkan solusi penukaran koin yang efisien untuk
+              bisnis. Dengan layanan kami, Anda dapat mengintegrasikan mesin
+              penukaran koin ke dalam bisnis Anda, memungkinkan pelanggan untuk
+              dengan mudah menggunakan koin receh sebagai pembayaran elektronik
+            </p>
+          </div>
+        </div>
+        <div
+          class="wrapper-text-bottom-section-2 border-content-section padding-section"
+        >
+          <div>
+            <h5>LAYANAN KAMI</h5>
+            <h3>Bukan sekedar layanan penukaran koin biasa.</h3>
+          </div>
+          <p>
+            Koinan memberikan kemudahan bagi masyarakat dengan mengubah koin menjadi mata 
+            uang digital yang praktis digunakan. Bagi UKM, Koinan mempermudah penerimaan dan 
+            pengelolaan pembayaran digital, meningkatkan arus kas, dan mengurangi beban 
+            penanganan uang tunai, menjadikannya mitra kunci dalam ekonomi digital.
+          </p>
+        </div>
+        <span></span>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="cara-tukar-koin" class="section-3 padding-left-section">
+        <!-- section top -->
+        <div
+          id="section-3-top"
+          class="wrapper-text-top-section-3 border-content-section-left border-bottom-section padding-section observer"
+        >
+          <h5>CARA KAMI BEKERJA</h5>
+          <h3>
+            Proses penukaran <br />
+            koin yang lebih mudah & anti ribet.
+          </h3>
+        </div>
+        <div
+          class="wrapper-machine-top-section-3 border-content-section border-bottom-section"
+        >
+          <div class="border-bottom-section">
+            <span>1</span>
+            <p>
+              Siapkan uang koin yang akan Anda <br />
+              tukarkan di mesin kami
+            </p>
+          </div>
+          <div class="border-bottom-section">
+            <span>2</span>
+            <p>
+              Pilih digital wallet tujuan sesuai <br />
+              dengan keinginan Anda
+            </p>
+          </div>
+          <div>
+            <span>3</span>
+            <p>
+              Tunggu beberapa saat dan koin akan <br />
+              diteruskan ke digital wallet Anda
+            </p>
+          </div>
+        </div>
+        <div class="wrapper-machine-image">
+          <img loading="lazy" src="assets/machine-new.png"/ alt="image-koinan"
+          loading="lazy">
+        </div>
+
+        <!-- section bottom -->
+        <div
+          id="temukan-kami"
+          class="wrapper-heroes-bottom-section-3 border-content-section-left padding-section border-bottom-section observer"
+        >
+          <div class="hero-section-3-location" id="hero-section-3-location">
+            <h5 id="title-pagination">Patung Pancoran Jakarta</h5>
+            <p id="text-pagination">
+              Nunc quam neque tortor turpis ac eget dui elementum diam. Egestas
+              etiam sed scelerisque eu sapien turpis viverra pretium. Odio ipsum
+              leo eget sed.
+            </p>
+            <div class="image-dot" id="image-dot">
+              <button class="active-image-btn"></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="wrapper-text-bottom-section-3 border-content-section padding-section border-bottom-section"
+        >
+          <div>
+            <h5>TEMUKAN KAMI</h5>
+            <h3>Koinan telah hadir di berbagai lokasi strategis.</h3>
+          </div>
+          <p>
+            Koinan hadir di berbagai lokasi strategis di seluruh kota. Temukan
+            mesin penukaran koin terdekat dari lokasi Anda dan nikmati kemudahan
+            bertransaksi dengan Koinan.
+          </p>
+          <div>
+            <a id="scroll-to-form" class="btn-contact" target=""
+              >Hubungi Kami</a
+            >
+            <a
+              href="https://www.instagram.com/koinan.id/"
+              target="_blank"
+              class="btn-follow"
+              >Ikuti Kami</a
+            >
+          </div>
+        </div>
+        <span></span>
+      </section>
+
+      <!-- Section 4 -->
+      <section
+        id="hubungi-kami"
+        class="section-4 padding-left-section observer"
+      >
+        <div
+          class="wrapper-text-top-section-4 border-content-section-left padding-section"
+        >
+          <div>
+            <h5>HUBUNGI KAMI</h5>
+            <h3>Untuk membuka peluang kerja sama dengan kami.</h3>
+          </div>
+          <p>
+            Jika Anda memiliki pertanyaan atau membutuhkan bantuan, jangan ragu
+            untuk menghubungi tim kami melalui email di
+            <b id="email-koinan">support@koinan.com</b>
+            atau melalui telepon di
+            <b id="phone-number-koinan">+628123456789</b>. Kami juga tersedia
+            untuk berdiskusi tentang peluang kerjasama bisnis.
+          </p>
+        </div>
+
+        <form
+          method="post"
+          action="/contact-us"
+          id="form-submit-email"
+          class="wrapper-form-section-4 border-content-section padding-section"
+        >
+          {{ if index . "message"}}
+          <div
+            class="w-full p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+            role="alert"
+          >
+            {{ index . "message"}}
+          </div>
+          {{ end }}
+          <div class="custom-input">
+            <span>Nama</span>
+            <input
+              id="input-nama"
+              name="name"
+              type="text"
+              placeholder="masukan nama Anda ..."
+            />
+          </div>
+          <div class="custom-input">
+            <span>Email</span>
+            <input
+              id="input-email"
+              name="email"
+              type="email"
+              placeholder="masukan email Anda ..."
+            />
+          </div>
+          <div class="custom-input">
+            <span>Instansi</span>
+            <input
+              id="input-instansi"
+              name="instance"
+              type="text"
+              placeholder="tulis nama instansi Anda ..."
+            />
+          </div>
+          <div class="custom-input">
+            <span>Subject</span>
+            <select
+              name="subject"
+              id="select-subject"
+              class="placeholder-select"
+            >
+              <option class="placeholder-select" disabled selected hidden>
+                Pilih subject pesan
+              </option>
+              <option value="Tukar Koin Perseorangan">
+                Tukar koin perseorangan
+              </option>
+              <option value="Tukar koin bisnismu">Tukar koin bisnismu</option>
+              <option value="Kerjasama">Kerjasama</option>
+            </select>
+          </div>
+          <div class="custom-input">
+            <span>Pesan</span>
+            <textarea
+              name="message"
+              id="textarea-pesan"
+              placeholder="tulis pesan singkat Anda ..."
+            ></textarea>
+          </div>
+          <button type="submit" id="btn-submit" class="btn-submit">
+            Kirim
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <footer id="footer-container">
+      <p>@2024 KOINAN</p>
+      <div>
+        <a
+          href="https://www.instagram.com/koinan.id/"
+          class="menus-text"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            loading="lazy"
+            src="./static/assets/footer/IG.svg"
+            alt="image-instagram"
+        /></a>
+        <a
+          href="https://www.linkedin.com/company/koinan/"
+          class="menus-text"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            loading="lazy"
+            src="./static/assets/footer/LI.svg"
+            alt="image-linkedin"
+        /></a>
+        <a href="https://www.youtube.com/" class="menus-text"
+          ><img
+            loading="lazy"
+            src="./static/assets/footer/YT.svg"
+            alt="image-youtube"
+        /></a>
+      </div>
+    </footer>
+
+    <!-- Alert Modal -->
+    <div id="custom-alert" class="custom-alert hidden">
+      <div class="custom-alert-content">
+        <img
+          id="success-image"
+          src="./static/assets/error.svg"
+          alt="error"
+          width="100px"
+          height="100px"
+        />
+        <img
+          id="error-image"
+          src="./static/assets/success-svgrepo-com.svg"
+          alt="success"
+          width="100px"
+          height="100px"
+        />
+        <div>
+          <h3 id="alert-title"></h3>
+          <p id="alert-message"></p>
+          <button id="close-alert">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="./static/main.js"></script>
+  </body>
+</html>

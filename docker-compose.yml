@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  landingpage:
+    image: ghcr.io/saythanksid/koinan:latest
+    environment:
+      - APP_PORT=8080
+      - DB_HOST=10.20.30.40
+      - DB_PORT=5432
+      - DB_DATABASE=coinan
+      - DB_USERNAME=bayarboss
+      - DB_PASSWORD=bayarboss
+    ports:
+      - "8080:8080"

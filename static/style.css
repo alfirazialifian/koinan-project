@@ -252,7 +252,7 @@ footer {
   box-sizing: border-box;
   grid-template-columns: minmax(300px, 8fr) minmax(300px, 8fr) minmax(30px, 1fr);
   width: 100%;
-  background-image: url('./assets/Line.svg');
+  background-image: url('./static/assets/Line.svg');
   background-position: 0 -90px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -260,7 +260,7 @@ footer {
   .wrapper-hero-smile-section-1 {
     display: flex;
     justify-content: flex-end;
-    background-image: url('./assets/Frame-Hero-Smile.svg');
+    background-image: url('./static/assets/Frame-Hero-Smile.svg');
     background-repeat: no-repeat;
 
     & > div {

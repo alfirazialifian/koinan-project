@@ -116,12 +116,12 @@ document.querySelectorAll(".observer").forEach((section) => {
 
 /* pagination background */
 const bgImages = [
-  "url(./assets/img-location.svg)",
-  "url(./assets/hero-section-2-bottom-computer.svg)",
-  "url(./assets/hero-section-2-bottom-smile.svg)",
-  "url(./assets/hero-section-2-bottom-computer.svg)",
-  "url(./assets/hero-section-2-bottom-smile.svg)",
-  "url(./assets/hero-section-2-bottom-computer.svg)",
+  "url(./static/assets/img-location.svg)",
+  "url(./static/assets/hero-section-2-bottom-computer.svg)",
+  "url(./static/assets/hero-section-2-bottom-smile.svg)",
+  "url(./static/assets/hero-section-2-bottom-computer.svg)",
+  "url(./static/assets/hero-section-2-bottom-smile.svg)",
+  "url(./static/assets/hero-section-2-bottom-computer.svg)",
 ];
 
 const paginationContent = [

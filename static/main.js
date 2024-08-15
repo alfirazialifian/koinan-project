@@ -388,15 +388,9 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
 
       // Create and dispatch a submit event to trigger the form's submit event listener
-      const submitEvent = new Event("submit", { bubbles: true });
+      const submitEvent = new Event("submit", { bubbles: true, cancelable: true });
       form.dispatchEvent(submitEvent);
-      const targetElement = document.getElementById("form-submit-email");
-      targetElement.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the target element
     }
-  });
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
   });
 });
 /* Submit Form */

@@ -27,7 +27,7 @@ document
   .forEach((anchor, index) => {
     anchor.addEventListener("click", (e) => {
       e.preventDefault();
-      const offsetsValue = [90, 53, 120, 120, 90]
+      const offsetsValue = [90, 53, 120, 120, 90];
       const atrValue = e.target.getAttribute("data-target");
       const targetElement = document.getElementById(atrValue);
       if (targetElement) {
@@ -281,7 +281,7 @@ document
       e.preventDefault();
       drawer.classList.remove("open");
       hamburgerButtonDrawer.classList.remove("open");
-      const offsetsValue = [90, 350, 80, -80, 90]
+      const offsetsValue = [90, 350, 80, -80, 90];
       const atrValue = e.target.getAttribute("data-target");
       const targetElement = document.getElementById(atrValue);
       if (targetElement) {
@@ -388,7 +388,10 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
 
       // Create and dispatch a submit event to trigger the form's submit event listener
-      const submitEvent = new Event("submit", { bubbles: true, cancelable: true });
+      const submitEvent = new Event("submit", {
+        bubbles: true,
+        cancelable: true,
+      });
       form.dispatchEvent(submitEvent);
     }
   });

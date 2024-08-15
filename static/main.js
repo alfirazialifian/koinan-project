@@ -305,53 +305,53 @@ document
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("form-submit-email");
   const textarea = form.querySelector("#textarea-pesan");
-  const alertModal = document.getElementById("custom-alert");
-  const alertMessage = document.getElementById("alert-message");
-  const alertTitle = document.getElementById("alert-title");
-  const closeAlertButton = document.getElementById("close-alert");
-  const btnSubmit = document.getElementById("btn-submit");
-  const imageError = document.getElementById("success-image");
-  const imageSuccess = document.getElementById("error-image");
+  // const alertModal = document.getElementById("custom-alert");
+  // const alertMessage = document.getElementById("alert-message");
+  // const alertTitle = document.getElementById("alert-title");
+  // const closeAlertButton = document.getElementById("close-alert");
+  // const btnSubmit = document.getElementById("btn-submit");
+  // const imageError = document.getElementById("success-image");
+  // const imageSuccess = document.getElementById("error-image");
 
-  function submitSuccessfully() {
-    btnSubmit.textContent = "Terkirim";
-    btnSubmit.style.color = "white";
-    btnSubmit.style.backgroundColor = "gray";
-    btnSubmit.style.cursor = "not-allowed";
-    btnSubmit.disabled = true;
+  // function submitSuccessfully() {
+  //   btnSubmit.textContent = "Terkirim";
+  //   btnSubmit.style.color = "white";
+  //   btnSubmit.style.backgroundColor = "gray";
+  //   btnSubmit.style.cursor = "not-allowed";
+  //   btnSubmit.disabled = true;
 
-    setTimeout(() => {
-      btnSubmit.style.cursor = "pointer";
-      btnSubmit.disabled = false;
-      btnSubmit.textContent = "Kirim";
-      btnSubmit.style.backgroundColor = "rgba(16, 45, 50, 1)";
-    }, 5000);
-  }
+  //   setTimeout(() => {
+  //     btnSubmit.style.cursor = "pointer";
+  //     btnSubmit.disabled = false;
+  //     btnSubmit.textContent = "Kirim";
+  //     btnSubmit.style.backgroundColor = "rgba(16, 45, 50, 1)";
+  //   }, 5000);
+  // }
 
-  function showAlert(title, message, type) {
-    alertTitle.textContent = title;
-    alertMessage.textContent = message;
-    alertModal.classList.remove("hidden");
+  // function showAlert(title, message, type) {
+  //   alertTitle.textContent = title;
+  //   alertMessage.textContent = message;
+  //   alertModal.classList.remove("hidden");
 
-    console.log("ini type", type);
+  //   console.log("ini type", type);
 
-    if (type === "success") {
-      imageSuccess.classList.add("show-image-alert");
-      imageError.classList.add("hide-image-alert");
-      closeAlertButton.style.backgroundColor = "rgba(9, 83, 48, 0.8)";
-      closeAlertButton.textContent = "OK";
-      alertTitle.style.color = "rgba(9, 83, 48, 0.8)";
-    } else {
-      imageError.classList.add("show-image-alert");
-      imageSuccess.classList.add("hide-image-alert");
-    }
-  }
+  //   if (type === "success") {
+  //     imageSuccess.classList.add("show-image-alert");
+  //     imageError.classList.add("hide-image-alert");
+  //     closeAlertButton.style.backgroundColor = "rgba(9, 83, 48, 0.8)";
+  //     closeAlertButton.textContent = "OK";
+  //     alertTitle.style.color = "rgba(9, 83, 48, 0.8)";
+  //   } else {
+  //     imageError.classList.add("show-image-alert");
+  //     imageSuccess.classList.add("hide-image-alert");
+  //   }
+  // }
 
   // Function to hide custom alert
-  function hideAlert() {
-    alertModal.classList.add("hidden");
-  }
-  closeAlertButton.addEventListener("click", hideAlert);
+  // function hideAlert() {
+  //   alertModal.classList.add("hidden");
+  // }
+  // closeAlertButton.addEventListener("click", hideAlert);
 
   // form.addEventListener('submit', (event) => {
   //   event.preventDefault(); // Prevent the default form submission behavior
@@ -388,7 +388,7 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
 
       // Create and dispatch a submit event to trigger the form's submit event listener
-      const submitEvent = new Event("submit", { bubbles: true, cancelable: true });
+      const submitEvent = new Event("submit", { bubbles: true });
       form.dispatchEvent(submitEvent);
     }
   });

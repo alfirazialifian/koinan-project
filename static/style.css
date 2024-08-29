@@ -236,9 +236,10 @@ footer {
 }
 
 .koinan-bg-icon {
-  background: linear-gradient(to right, var(--color-primary), rgba(16, 45, 50, 0.8));
+  /* background: linear-gradient(to right, var(--color-primary), rgba(16, 45, 50, 0.8)); */
   padding: 1rem;
   border-radius: var(--border-radius);
+  width: 100%;
   margin-bottom: 4rem;
 }
 
@@ -274,7 +275,7 @@ footer {
       border-radius: 25px;
       height: 807px;
       width: 100%;
-      background-image: url('./assets/Hero-smile.svg');
+      background-image: url('./assets/new-bg-section-1.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       object-fit: contain;
@@ -292,7 +293,7 @@ footer {
 
     h2 {
       font-weight: 700;
-      font-size: var(--font-size-xlarge);
+      font-size: 68px;
       line-height: var(--line-height-xlarge);
       color: var(--color-primary);
     }
@@ -498,7 +499,7 @@ footer {
 .section-3 {
   display: grid;
   grid-template-columns: minmax(300px, 8fr) minmax(300px, 8fr) minmax(30px, 1fr);
-  grid-template-rows: 1fr 1fr; /* Defines 2 rows of equal height */
+  /* grid-template-rows: 1fr 1fr; */
   background-color: var(--color-background);
   background-image: url('./assets/bg-section-3.svg');
   background-position: center;
